@@ -1,3 +1,5 @@
+package Redis.niuke;
+
 /**
  * @Author:HowieLee
  * @Date:1/5/2019

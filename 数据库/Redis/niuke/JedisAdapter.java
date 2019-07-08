@@ -1,3 +1,5 @@
+package Redis.niuke;
+
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import redis.clients.jedis.BinaryClient;
