@@ -1,4 +1,4 @@
-package multiThread;
+package 多线程.multiThread;
 
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -67,9 +67,9 @@ public class MultiThreadTests {
 
     public static void testBlockingQueue(){
         BlockingQueue<String> q = new ArrayBlockingQueue<>(10);
-        new Thread(new Producer(q)).start();
-        new Thread(new Consumer(q),"Consumer1").start();
-        new Thread(new Consumer(q),"Consumer2").start();
+        new Thread(new multiThread.Producer(q)).start();
+        new Thread(new multiThread.Consumer(q),"Consumer1").start();
+        new Thread(new multiThread.Consumer(q),"Consumer2").start();
     }
 
     private static ThreadLocal<Integer> threadLocalUserIds = new ThreadLocal<>();
@@ -218,12 +218,12 @@ public class MultiThreadTests {
 
     public static void main(String[] args) {
         testThrend();
-        testSynchronized();
-        testBlockingQueue();
-        testThreadLocal();
-        testExecutor();
-        testAtomic();
-        testFuture();
+//        testSynchronized();
+//        testBlockingQueue();
+//        testThreadLocal();
+//        testExecutor();
+//        testAtomic();
+//        testFuture();
     }
 
 }
