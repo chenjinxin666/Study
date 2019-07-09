@@ -1,10 +1,10 @@
-package 反射;
+package 反射.反射基础;
 
 import java.lang.reflect.Field;
 
 public class ReflectField {
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchFieldException {
-        Class<?> aClass = Class.forName("反射.Person");
+        Class<?> aClass = Class.forName("反射.反射基础.Person");
         Field[] declaredFields = aClass.getDeclaredFields();
         for (Field field : declaredFields) {
             System.out.println(field);

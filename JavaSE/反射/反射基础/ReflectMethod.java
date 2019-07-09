@@ -1,11 +1,11 @@
-package 反射;
+package 反射.反射基础;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class ReflectMethod {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException, InstantiationException {
-        Class<?> aClass = Class.forName("反射.Person");
+        Class<?> aClass = Class.forName("反射.反射基础.Person");
         Method[] methods = aClass.getDeclaredMethods();
         for (Method method : methods) {
             System.out.println(method);

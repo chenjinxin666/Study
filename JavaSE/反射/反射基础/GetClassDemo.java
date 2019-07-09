@@ -1,4 +1,4 @@
-package 反射;
+package 反射.反射基础;
 
 /*
  * 反射概述：对于任意一个类，能动态的获取它的任意组成部分，可以任意的调用它的成员。
@@ -13,11 +13,11 @@ public class GetClassDemo {
         // 通过类名.classs
         Class clazz2 = Person.class;
         // 通过全路径名；需要抛出ClassNotFoundException
-        Class clazz3 = Class.forName("反射.Person");
+        Class clazz3 = Class.forName("反射.反射基础.Person");
 
         ClassLoader classLoader = GetClassDemo.class.getClassLoader();
         //需要抛出ClassNotFoundException
-        Class clazz4 = classLoader.loadClass("反射.Person");
+        Class clazz4 = classLoader.loadClass("反射.反射基础.Person");
 
         System.out.println(clazz==clazz2);//true
         System.out.println(clazz==clazz3);//true

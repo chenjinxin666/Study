@@ -1,4 +1,4 @@
-package 反射;
+package 反射.反射基础;
 
 public class Person {
     public String name;

@@ -1,4 +1,4 @@
-package 反射;
+package 反射.反射基础;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -6,7 +6,7 @@ import java.lang.reflect.InvocationTargetException;
 //反射构造方法并创建对象
 public class ReflectConstructor {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
-        Class aClass = Class.forName("反射.Person");
+        Class aClass = Class.forName("反射.反射基础.Person");
 
         //获取 public 的构造方法并打印
         Constructor[] constructors = aClass.getConstructors();
